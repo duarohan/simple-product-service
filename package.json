@@ -1,0 +1,32 @@
+{
+  "name": "diligent-assignment",
+  "version": "1.0.0",
+  "description": "We would like you to create a REST API for managing products. The API should allow the following actions: Create a new product Get a single product List the most viewed products Delete a product When creating a new product, the name and price of the product need to be provided. Optionally, a description can also be provided. The price is assumed to be in USD. The product should be saved to a SQL database.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --recursive --timeout 60000",
+    "start": "npx forever start --uid \"product-service\" -a  -p ./logs app.js",
+    "stop": "npx forever stop \"product-service\"",
+    "migrate": "node migration.js"
+  },
+  "author": "Rohan Dua",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "assert": "^2.0.0",
+    "axios": "^0.21.4",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "forever": "^4.0.3",
+    "json-server": "^0.17.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.5",
+    "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.1.0"
+  }
+}

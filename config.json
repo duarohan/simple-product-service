@@ -1,0 +1,12 @@
+{
+    "database": {
+        "username": "local",
+        "password": "local",
+        "database": "cloud_services_db",
+        "host": "192.168.64.2",
+        "port": 3306,
+        "dialect": "mysql",
+        "logging": false
+    },
+    "currenyLayer":"gmxEvCRTFUoPnhGabvYOzWhjAWIwuhrJ"
+  }
