@@ -1,0 +1,18 @@
+{
+    "required":[],
+    "properties": {
+      "toCurrency": {
+        "oneOf":[
+            {
+                "type": "string",
+                "enum": ["GBP","CAD","EUR"]
+            },
+            {
+                "type" : "array",
+                "items":{"enum":["GBP","CAD","EUR"]}
+            }
+        ]
+        
+      }
+    }
+}

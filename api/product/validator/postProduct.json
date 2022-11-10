@@ -1,0 +1,9 @@
+{
+    "required":["name", "price","currency"],
+    "properties": {
+      "name": {"type":"string","minLength":8, "maxLength":20},
+      "price": {"type":"number"},
+      "currency":{"type":"string"},
+      "description" : {"type":"string"}
+    }
+}

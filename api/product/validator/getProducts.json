@@ -1,0 +1,9 @@
+{
+    "required":[],
+    "properties": {
+      "limit": {"type": "number"},
+      "offset":{"type": "number"},
+      "sortBy": {"enum":["views","id"]},
+      "includeDeletes": {"type": "boolean"}
+    }
+}
